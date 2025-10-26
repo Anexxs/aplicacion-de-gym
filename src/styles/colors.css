@@ -1,0 +1,38 @@
+/* Variables de colores - Paleta cálida y desaturada */
+:root {
+  /* Colores principales */
+  --bg: #F5F0EA;              /* Fondo principal (Warm Cream) */
+  --bg-2: #ECE3D9;            /* Fondo secundario (Sandstone) */
+  --surface: #E6D8CC;         /* Superficie/tarjetas (Almond) */
+  --accent: #C77B5D;          /* Acento principal (Muted Terracotta) */
+  --accent-rgb: 199, 123, 93; /* RGB del acento para transparencias */
+  --accent-strong: #A95A45;   /* Acento oscuro/foco (Brick) */
+  --success: #8A986F;         /* Verde suave para éxito */
+  --text: #2B2A28;            /* Texto primario (Dark Charcoal) */
+  --text-muted: #6F6258;      /* Texto secundario */
+  --divider: #DED3C9;         /* Separadores y líneas sutiles */
+  
+  /* Sombras suaves */
+  --shadow-light: 0 2px 8px rgba(43, 42, 40, 0.06);
+  --shadow-medium: 0 6px 18px rgba(43, 42, 40, 0.08);
+  --shadow-strong: 0 12px 24px rgba(43, 42, 40, 0.12);
+}
+
+/* Modo oscuro */
+[data-theme="dark"] {
+  --bg: #1B1614;              /* Fondo oscuro */
+  --bg-2: #241E1C;            /* Fondo secundario oscuro */
+  --surface: #2A211E;         /* Superficie oscura (un poco más clara) */
+  --accent: #E4A980;          /* Acento más claro para mejor contraste */
+  --accent-rgb: 228, 169, 128; /* RGB del acento para transparencias en modo oscuro */
+  --accent-strong: #C77B5D;   /* Acento fuerte */
+  --success: #9CAA7F;         /* Verde más claro para mejor visibilidad */
+  --text: #F2EEE9;            /* Texto claro */
+  --text-muted: #B8A898;      /* Texto secundario con mejor contraste */
+  --divider: rgba(255, 255, 255, 0.08); /* Separadores más visibles */
+  
+  /* Sombras ajustadas para modo oscuro */
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-medium: 0 6px 18px rgba(0, 0, 0, 0.25);
+  --shadow-strong: 0 12px 24px rgba(0, 0, 0, 0.35);
+}

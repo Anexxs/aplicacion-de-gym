@@ -1,0 +1,120 @@
+/* Estilos para el Feed usando la paleta cálida */
+.feed {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título del feed */
+.feed h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Estilos para cada post */
+.post {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
+  margin-bottom: 24px;
+  overflow: hidden;
+  border: 1px solid var(--divider);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.post:hover {
+  box-shadow: var(--shadow-strong);
+  transform: translateY(-2px);
+}
+
+/* Header del post */
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--divider);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid var(--accent);
+  box-shadow: var(--shadow-light);
+}
+
+.author-info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.author-info p {
+  margin: 2px 0 0 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Contenido del post */
+.post-content {
+  padding: 16px;
+  background: var(--surface);
+}
+
+.post-content p {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.post-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+}
+
+/* Footer del post */
+.post-footer {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-2);
+  border-top: 1px solid var(--divider);
+}
+
+.like-btn, .comment-btn {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.like-btn:hover, .comment-btn:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  transform: scale(1.05);
+}
+
+.like-btn:active {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+  transform: scale(0.98);
+}

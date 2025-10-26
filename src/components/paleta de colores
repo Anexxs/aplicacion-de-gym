@@ -1,0 +1,68 @@
+Perfecto — te propongo una paleta cálida, desaturada y pensada para que los fondos de la app sean agradables y relajantes para la vista. Incluyo variantes claras y oscuras, usos recomendados y variables CSS listos para copiar.
+
+Paleta propuesta (colores pensados para grandes fondos y superficies)
+
+Fondo principal (Warm Cream)
+Hex: #F5F0EA
+Uso: fondos generales de pantallas, zonas amplias.
+Fondo secundario / contenedores (Sandstone)
+Hex: #ECE3D9
+Uso: secciones, columnas, bloques secundarios.
+Superficie / tarjetas (Almond)
+Hex: #E6D8CC
+Uso: cards, modales, panels con elevación ligera.
+Acento principal (Muted Terracotta)
+Hex: #C77B5D
+Uso: botones principales, iconos activos, highlights.
+Acento oscuro / foco (Brick)
+Hex: #A95A45
+Uso: estados activos, outlines, sombras de acento.
+Verde suave (Success)
+Hex: #8A986F
+Uso: indicadores de éxito/progreso, pequeñas señales positivas.
+Texto primario (Dark Charcoal)
+Hex: #2B2A28
+Uso: títulos y texto importante sobre fondos claros.
+Texto secundario / muting
+Hex: #6F6258
+Uso: subtítulos, meta información.
+Separadores / líneas sutiles
+Hex: #DED3C9
+Variante para modo oscuro (manteniendo calidez)
+
+Fondo oscuro
+Hex: #1B1614
+Uso: fondo principal en modo noche.
+Superficie oscuro
+Hex: #241E1C
+Uso: tarjetas y paneles en modo noche.
+Acento en modo oscuro
+Hex: #D99A7E
+Uso: botones y estados sobre fondos oscuros.
+Texto claro
+Hex: #F2EEE9
+Ejemplo de variables CSS (Light + Dark) :root { --bg: #F5F0EA; --bg-2: #ECE3D9; --surface: #E6D8CC; --accent: #C77B5D; --accent-strong: #A95A45; --success: #8A986F; --text: #2B2A28; --text-muted: #6F6258; --divider: #DED3C9; } [data-theme="dark"] { --bg: #1B1614; --bg-2: #241E1C; --surface: #241E1C; --accent: #D99A7E; --accent-strong: #A95A45; --success: #8A986F; --text: #F2EEE9; --text-muted: #D1C4BB; --divider: rgba(255,255,255,0.06); }
+
+Sugerencias de uso práctico
+
+Menos es más: usa 1 acento principal (#C77B5D) para CTA y pequeños toques (iconos, botones). Mantén los fondos neutros y uniformes.
+Profundidad con opacidades: para separar capas grandes, aplica overlays semitransparentes en vez de colores muy distintos (ej. tarjeta sobre fondo: background: var(--surface); box-shadow: 0 6px 18px rgba(43,42,40,0.06)).
+Evita saturaciones fuertes en superficies grandes: estos tonos están desaturados para descansar la vista.
+Texto y contraste: asegúrate de que el contraste del texto cumpla WCAG (≥4.5:1 para texto normal). El texto primario (#2B2A28) sobre el fondo principal (#F5F0EA) suele cumplir; prueba combinaciones concretas con un verificador si vas a usar otras variaciones.
+Botones sobre fondos claros: usa el acento como fondo del botón y texto blanco (#FFFFFF) encima. Para estados disabled usa acento con opacidad 0.4 o un gris desaturado.
+Gradientes suaves (opcional): para hero o pantallas de bienvenida: linear-gradient(180deg, #F5F0EA 0%, #ECE3D9 60%, #C77B5D 100%) con baja intensidad (usa en áreas grandes y sin texto pequeño encima).
+Ejemplos rápidos de aplicación
+
+Pantalla principal: --bg (área mayor) + cards con --surface + CTA flotante con --accent.
+Pantalla de estadísticas: fondo claro con bloques de datos en --surface y barras/indicadores en --accent / --success.
+Modo noche: activa [data-theme="dark"] con fondo oscuro y usa --accent más claro para los CTA.
+Notas de accesibilidad y ergonomía visual
+
+Para textos largos sobre tarjetas claras, mantener contraste alto (texto primario vs card).
+Para iconografía pequeña o leyendas, sube un poco la saturación/contraste de la variante usada o usa peso tipográfico mayor.
+Prueba el diseño en condiciones reales (luz diurna y baja luz) y añade alternancia de modo claro/oscuro para usuarios sensibles.
+Si quieres, te hago:
+
+Un PDF de muestra con mockups (pantalla principal, tarjeta, modal) usando esta paleta.
+Archivos variables en SCSS / Figma tokens listos para importar.
+¿Quieres que genere los tokens SCSS y un ejemplo de pantalla con estos colores?

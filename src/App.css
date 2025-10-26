@@ -1,0 +1,93 @@
+/* Importar variables de colores */
+@import './styles/colors.css';
+
+/* Estilos generales de la aplicación */
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+  /* Gradiente sutil opcional para variación */
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+}
+
+.app-header {
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-medium);
+  border-bottom: 1px solid var(--divider);
+}
+
+.header-content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-text {
+  text-align: left;
+  flex: 1;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.header-text p {
+  margin: 10px 0 0 0;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Responsive: En pantallas pequeñas, centrar todo */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-text {
+    text-align: center;
+  }
+}
+
+main {
+  padding: 0 20px 40px 20px;
+}
+
+.main-content {
+  min-height: calc(100vh - 200px);
+  padding-bottom: 100px; /* Espacio para la navbar inferior */
+}
+
+/* Pantallas temporales */
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--surface);
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: var(--shadow-light);
+}
+
+.coming-soon h2 {
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+  color: var(--text);
+}
+
+.coming-soon p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin: 0;
+}

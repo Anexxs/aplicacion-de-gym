@@ -1,0 +1,158 @@
+// Datos mock para eventos del gimnasio con coordenadas
+export const mockEvents = [
+  {
+    id: 1,
+    title: "Competencia de CrossFit",
+    description: "Competencia local de CrossFit para todos los niveles. ¡Inscríbete y pon a prueba tus habilidades!",
+    date: "2024-11-15",
+    time: "09:00",
+    location: "FitZone Madrid Centro",
+    address: "Calle Gran Vía, 28, Madrid",
+    coordinates: [40.4200, -3.7025], // [lat, lng]
+    city: "Madrid",
+    district: "Centro",
+    category: "competition",
+    sport: "CrossFit",
+    price: 25,
+    maxParticipants: 50,
+    currentParticipants: 32,
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop",
+    organizer: "FitZone Madrid",
+    difficulty: "Intermedio",
+    tags: ["crossfit", "competencia", "resistencia"]
+  },
+  {
+    id: 2,
+    title: "Clase de Yoga Matutino",
+    description: "Sesión de yoga relajante para comenzar el día con energía positiva. Todos los niveles bienvenidos.",
+    date: "2024-11-12",
+    time: "07:00",
+    location: "Gym Wellness Center",
+    address: "Avenida de la Paz, 15, Madrid",
+    coordinates: [40.4378, -3.6795],
+    city: "Madrid",
+    district: "Salamanca",
+    category: "class",
+    sport: "Yoga",
+    price: 0,
+    maxParticipants: 20,
+    currentParticipants: 15,
+    image: "https://images.unsplash.com/photo-1506629905607-d5b94a12e43e?w=400&h=300&fit=crop",
+    organizer: "Wellness Center",
+    difficulty: "Principiante",
+    tags: ["yoga", "relajacion", "matutino"]
+  },
+  {
+    id: 3,
+    title: "Torneo de Powerlifting",
+    description: "Demuestra tu fuerza en sentadillas, press de banca y peso muerto. Categorías por peso corporal.",
+    date: "2024-11-25",
+    time: "10:00",
+    location: "Iron Gym Madrid",
+    address: "Calle de Alcalá, 142, Madrid",
+    coordinates: [40.4250, -3.6850],
+    city: "Madrid",
+    district: "Retiro",
+    category: "competition",
+    sport: "Powerlifting",
+    price: 30,
+    maxParticipants: 40,
+    currentParticipants: 28,
+    image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&h=300&fit=crop",
+    organizer: "Iron Gym",
+    difficulty: "Avanzado",
+    tags: ["powerlifting", "fuerza", "competencia"]
+  },
+  {
+    id: 4,
+    title: "Workshop de Nutrición Deportiva",
+    description: "Aprende sobre nutrición deportiva con expertos. Incluye planificación de comidas y suplementación.",
+    date: "2024-11-18",
+    time: "14:00",
+    location: "Centro de Nutrición Deportiva",
+    address: "Calle Serrano, 89, Madrid",
+    coordinates: [40.4350, -3.6823],
+    city: "Madrid",
+    district: "Salamanca",
+    category: "workshop",
+    sport: "Nutrición",
+    price: 35,
+    maxParticipants: 30,
+    currentParticipants: 18,
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+    organizer: "NutriSport Academy",
+    difficulty: "Todos los niveles",
+    tags: ["nutrición", "educación", "salud"]
+  },
+  {
+    id: 5,
+    title: "Clase de Running Nocturno",
+    description: "Sesión de running grupal por el Retiro. Perfecto para terminar el día con energía.",
+    date: "2024-11-14",
+    time: "19:30",
+    location: "Parque del Retiro",
+    address: "Plaza de la Independencia, Madrid",
+    coordinates: [40.4152, -3.6844],
+    city: "Madrid",
+    district: "Retiro",
+    category: "class",
+    sport: "Running",
+    price: 0,
+    maxParticipants: 25,
+    currentParticipants: 18,
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+    organizer: "RunMadrid Group",
+    difficulty: "Intermedio",
+    tags: ["running", "nocturno", "parque"]
+  },
+  {
+    id: 6,
+    title: "Clase de Spinning Nocturna",
+    description: "Sesión de spinning con música energizante. Quema calorías y diviértete al ritmo de la música.",
+    date: "2024-11-14",
+    time: "19:30",
+    location: "SportCenter Plus",
+    address: "Plaza de España, 8, Madrid",
+    coordinates: [40.4240, -3.7116],
+    city: "Madrid",
+    district: "Centro",
+    category: "class",
+    sport: "Spinning",
+    price: 12,
+    maxParticipants: 25,
+    currentParticipants: 22,
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+    organizer: "SportCenter Plus",
+    difficulty: "Intermedio",
+    tags: ["spinning", "cardio", "nocturno"]
+  }
+];
+
+// Filtros para el mapa
+export const mapFilters = {
+  cities: [
+    { id: 'all', name: 'Todas las ciudades' },
+    { id: 'Madrid', name: 'Madrid' }
+  ],
+  districts: [
+    { id: 'all', name: 'Todas las comunas' },
+    { id: 'Centro', name: 'Centro' },
+    { id: 'Salamanca', name: 'Salamanca' },
+    { id: 'Retiro', name: 'Retiro' }
+  ],
+  activities: [
+    { id: 'all', name: 'Todos los tipos' },
+    { id: 'competition', name: 'Competencias' },
+    { id: 'class', name: 'Clases' },
+    { id: 'workshop', name: 'Talleres' }
+  ],
+  sports: [
+    { id: 'all', name: 'Todos los deportes' },
+    { id: 'CrossFit', name: 'CrossFit' },
+    { id: 'Yoga', name: 'Yoga' },
+    { id: 'Powerlifting', name: 'Powerlifting' },
+    { id: 'Running', name: 'Running' },
+    { id: 'Spinning', name: 'Spinning' },
+    { id: 'Nutrición', name: 'Nutrición' }
+  ]
+};
