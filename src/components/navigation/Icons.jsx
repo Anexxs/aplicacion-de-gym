@@ -28,7 +28,32 @@ export const SearchIcon = ({ active = false }) => (
   </svg>
 );
 
-// 🏋️ Icono de Mancuerna (Gimnasios)
+// 🔥 Icono de Fuego (Hits - contenido intenso)
+export const HitsIcon = ({ active = false }) => (
+  <svg 
+    width="24" 
+    height="24" 
+    viewBox="0 0 24 24" 
+    fill={active ? '#ff4757' : 'var(--text-muted)'} // Color rojo intenso cuando activo
+    stroke="none"
+  >
+    {/* Llama principal */}
+    <path d="M12 2c-1.5 0-2.5 1-2.5 2.5 0 1.5 1 3 2.5 4.5-1-2-0.5-4 1-5 0.5-0.5 1-0.5 1.5 0 0.5 0.5 0.5 1.5 0 2.5 1.5-1 3-2.5 3-4.5C17.5 3 16.5 2 15 2c-0.8 0-1.5 0.4-2 1-0.5-0.6-1.2-1-2-1z"/>
+    
+    {/* Llama media */}
+    <path d="M8 8c-1 0-1.5 0.8-1.5 1.8 0 2 1.5 3.5 3.5 4.2-0.8-1.5-0.5-3 0.8-4 0.3-0.3 0.7-0.3 1 0 0.3 0.3 0.3 1 0 1.5 1-0.8 2-2 2-3.5C14.8 6.8 14 6 13 6c-0.5 0-1 0.3-1.3 0.7C11.3 6.3 10.8 6 10.3 6c-0.8 0-1.5 0.8-1.5 1.8"/>
+    
+    {/* Base de la llama */}
+    <path d="M10 14c-0.8 0-1.5 1-1.5 2.2 0 2.2 1.2 3.8 3.5 3.8s3.5-1.6 3.5-3.8c0-1.2-0.7-2.2-1.5-2.2-0.5 0-1 0.3-1.2 0.8-0.2-0.5-0.7-0.8-1.2-0.8-0.8 0-1.6 1-1.6 2.2"/>
+    
+    {/* Chispas pequeñas */}
+    <circle cx="6" cy="12" r="1" opacity="0.6"/>
+    <circle cx="18" cy="10" r="0.8" opacity="0.5"/>
+    <circle cx="19" cy="14" r="0.6" opacity="0.4"/>
+  </svg>
+);
+
+// �🏋️ Icono de Mancuerna (Gimnasios)
 export const GymIcon = ({ active = false }) => (
   <svg 
     width="24" 

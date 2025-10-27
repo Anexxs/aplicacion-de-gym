@@ -1,40 +1,40 @@
-# 🏋️ Gym Social - Red Social para Gimnasios
+# Gym Social - Red Social para Gimnasios
 
-Una aplicación web moderna enfocada en crear una comunidad para personas que van al gimnasio. Desarrollada con React + Vite, con un diseño responsive y funcionalidades avanzadas.
+Una aplicacion web moderna enfocada en crear una comunidad para personas que van al gimnasio. Desarrollada con React + Vite, con un diseño responsive y funcionalidades avanzadas.
 
-## 🌟 Características
+## Caracteristicas
 
-### 📱 **Interfaz Principal**
+### Interfaz Principal
 - **Feed de publicaciones** con interacciones sociales
-- **Sistema de temas** (claro/oscuro) con detección automática del sistema
-- **Navegación inferior** de 6 pestañas con iconos personalizados
-- **Diseño responsive** optimizado para móviles y escritorio
+- **Sistema de temas** (claro/oscuro) con deteccion automatica del sistema
+- **Navegacion inferior** de 6 pestañas con iconos personalizados
+- **Diseño responsive** optimizado para moviles y escritorio
 
-### 🗺️ **Mapa de Eventos**
+### Mapa de Eventos
 - **Mapa interactivo** con OpenStreetMap
-- **Marcadores personalizados** por categoría de evento
+- **Marcadores personalizados** por categoria de evento
 - **Sistema de filtros avanzado**:
-  - 📍 Por ciudad (Madrid, Barcelona, Valencia, etc.)
-  - 🏘️ Por comunas/distritos
-  - 🎯 Por tipo de actividad (competencias, clases, talleres)
-  - 🏃‍♂️ Por deporte (Fitness, CrossFit, Yoga, etc.)
+  - Por ciudad (Madrid, Barcelona, Valencia, etc.)
+  - Por comunas/distritos
+  - Por tipo de actividad (competencias, clases, talleres)
+  - Por deporte (Fitness, CrossFit, Yoga, etc.)
 - **Popups informativos** con detalles completos de eventos
 - **Contador en tiempo real** de eventos filtrados
 
-### 👤 **Perfil de Usuario**
-- **Información personal** completa
-- **Estadísticas de fitness** con métricas detalladas
+### Perfil de Usuario
+- **Informacion personal** completa
+- **Estadisticas de fitness** con metricas detalladas
 - **Sistema de logros** con badges y progreso
 - **Tabs organizados**: Posts, Logros, Fitness
-- **Avatar personalizado** integrado en la navegación
+- **Avatar personalizado** integrado en la navegacion
 
-### 🎨 **Sistema de Diseño**
-- **Paleta de colores cálidos** con tonos naranjas y rojos
+### Sistema de Diseño
+- **Paleta de colores calidos** con tonos naranjas y rojos
 - **Variables CSS personalizadas** para temas
 - **Transiciones suaves** y animaciones
 - **Iconos SVG optimizados** para rendimiento
 
-## 🛠️ Tecnologías
+## Tecnologias
 
 - **Frontend**: React 19.1.1
 - **Build Tool**: Vite 7.1.12
@@ -42,13 +42,13 @@ Una aplicación web moderna enfocada en crear una comunidad para personas que va
 - **Estilos**: CSS custom con variables de tema
 - **Persistencia**: localStorage para configuraciones
 
-## 🚀 Instalación y Desarrollo
+## Instalacion y Desarrollo
 
 ### Prerrequisitos
 - Node.js (versión 16 o superior)
 - npm o yarn
 
-### Instalación
+### Instalacion
 ```bash
 # Clonar el repositorio
 git clone https://github.com/Anexxs/aplicacion-de-gym.git
@@ -69,7 +69,7 @@ npm run preview  # Vista previa del build
 npm run lint     # Verificar código con ESLint
 ```
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 src/

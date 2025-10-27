@@ -1,0 +1,278 @@
+/* Estilos para Hits - Videos estilo TikTok */
+.hits-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Pantalla de selección de categorías */
+.hits-container h1 {
+  text-align: center;
+  margin: 40px 0 30px 0;
+  font-size: 2rem;
+  background: linear-gradient(45deg, #ff6b35, #ff4757);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px 40px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.Categorias button {
+  padding: 20px;
+  background: linear-gradient(135deg, #ff6b35, #ff4757);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 71, 87, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.Categorias button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(255, 71, 87, 0.5);
+}
+
+.Categorias button:active {
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Contenedor de video estilo TikTok */
+.video-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  background: #000;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Animaciones de transición entre videos */
+.video-container.transitioning {
+  transform: translateY(-20px);
+  opacity: 0.3;
+  filter: blur(2px);
+}
+
+.video-player {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  background: #000;
+  border-radius: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animación específica para el cambio de video */
+.transitioning .video-player {
+  transform: scale(0.95);
+  opacity: 0.7;
+}
+
+/* Información del video superpuesta */
+.video-info {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  right: 80px;
+  z-index: 10;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.video-info h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.video-creator {
+  color: #ff6b35;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.video-description {
+  color: #f0f0f0;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.video-stats {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.video-stats span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+/* Botones de navegación estilo TikTok */
+.botones-navegacion {
+  position: absolute;
+  right: 20px;
+  top: 40%; /* AJUSTADO: Más arriba del centro */
+  transform: translateY(-50%); /* Centrado vertical perfecto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alineación perfecta */
+  z-index: 10;
+}
+
+/* Estilo base para ambos botones */
+.botones-navegacion button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+  margin: 10px 0;
+}
+
+/* Botón ARRIBA específico */
+.botones-navegacion .ARRIBA {
+  background: rgba(0, 0, 0, 0.85);
+  position: relative;
+  /* REMOVIDO: Sin desplazamiento adicional, se mantiene en posición normal del flexbox */
+}
+
+.botones-navegacion .ARRIBA:hover {
+  background: rgba(255, 107, 53, 0.9);
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
+}
+
+/* Botón ABAJO específico */
+.botones-navegacion .ABAJO {
+  background: rgba(0, 0, 0, 0.85);
+  position: relative;
+  /* Sin top específico - mantiene posición normal */
+}
+
+.botones-navegacion .ABAJO:hover {
+  background: rgba(255, 107, 53, 0.9);
+  transform: scale(1.1) translateY(2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
+}
+
+/* Botón volver - usando ID específico */
+#volver-categorias {
+  position: absolute;
+  top: 20px;  /* Posición visible en la parte superior */
+  left: 20px; /* Con margen desde el borde izquierdo */
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+#volver-categorias:hover {
+  background: rgba(255, 107, 53, 0.8);
+  transform: scale(1.05);
+}
+
+/* Contador de videos */
+.Videos-list p:nth-last-child(2) {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* Mensaje de no videos */
+.no-videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Categorias {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .video-info {
+    bottom: 80px;
+    right: 60px;
+    left: 15px;
+    padding: 15px;
+  }
+  
+  .botones-navegacion {
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 60px; /* AUMENTADO MUCHO: Separación mayor para móviles */
+  }
+  
+  .botones-navegacion button {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+  
+  /* Ajustes específicos para móviles */
+  .botones-navegacion .ARRIBA:hover {
+    transform: scale(1.05) translateY(-1px);
+  }
+  
+  .botones-navegacion .ABAJO:hover {
+    transform: scale(1.05) translateY(1px);
+  }
+}

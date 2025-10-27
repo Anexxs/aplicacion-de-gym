@@ -1,12 +1,13 @@
 import React from 'react';
-import { HomeIcon, SearchIcon, GymIcon, EventsIcon, MessageIcon, ProfileAvatar } from './Icons.jsx';
+import { HomeIcon, SearchIcon, HitsIcon, GymIcon, EventsIcon, MessageIcon, ProfileAvatar } from './Icons.jsx';
 import { currentUser } from '../../data/userMockData';
 import './BottomNav.css';
 
 function BottomNav({ activeTab, onTabChange }) {
   const navItems = [
     { id: 'home', label: 'Inicio', icon: HomeIcon },
-    { id: 'search', label: 'Buscar', icon: SearchIcon },
+    { id: 'search', label: 'Buscar', icon: SearchIcon }, // MANTENIDO: Búsqueda original
+    { id: 'hits', label: 'Hits', icon: HitsIcon }, // AGREGADO: Nueva pestaña Hits con fuego
     { id: 'gyms', label: 'Gimnasios', icon: GymIcon },
     { id: 'events', label: 'Eventos', icon: EventsIcon },
     { id: 'messages', label: 'Mensajes', icon: MessageIcon },

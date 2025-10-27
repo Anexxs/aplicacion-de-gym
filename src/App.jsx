@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Feed from './components/feed/Feed'
 import Profile from './components/profile/Profile'
 import Events from './components/screens/eventos/Events'
+import Hits from './components/screens/hits/hits' // AGREGADO: Importar componente Hits
 import BottomNav from './components/navigation/BottomNav'
 import ThemeToggle from './components/screens/ThemeToggle'
 import { mockPosts } from './data/mockData'
@@ -40,7 +41,9 @@ function App() {
       case 'home':
         return <Feed posts={mockPosts} />;
       case 'search':
-        return <SearchScreen />;
+        return <SearchScreen />; // RESTAURADO: Pantalla de búsqueda original
+      case 'hits':
+        return <Hits />; // AGREGADO: Nueva pestaña Hits con videos
       case 'gyms':
         return <GymsScreen />;
       case 'events':
